@@ -3,12 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title> Promises Student Planet</title>
+    <link rel="stylesheet" href="data/materialize-css/dist/css/materialize.min.css">
   </head>
   <body>
 
+    <div class="col s12 m7">
+   <h2 class="header">Horizontal Card</h2>
+   <div class="card horizontal">
+     <div class="card-image">
+       <img src="https://lorempixel.com/100/190/nature/6">
+     </div>
+     <div class="card-stacked">
+       <div class="card-content">
+         <p>I am a very simple card. I am good at containing small bits of information.</p>
+       </div>
+       <div class="card-action">
+         <a href="#">This is a link</a>
+       </div>
+     </div>
+   </div>
+ </div>
 
+    <script type="text/javascript" src="jquery/dist/jquery.min.js" ></script>
+    <script type="text/javascript" src="materialize-css/dist/js/materialize.min.js"></script>
     <script type="text/javascript">
-
         function getJSON(url){
           return new Promise (function(resolve, reject){
             var ajax = new XMLHttpRequest();
@@ -30,7 +48,7 @@
         .then(function(responsePlanet){
           console.log(responsePlanet)
         });
-
     </script>
+
   </body>
 </html>
